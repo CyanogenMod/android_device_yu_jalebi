@@ -14,13 +14,17 @@
 
 $(call inherit-product, device/yu/jalebi/full_jalebi.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common ZOS stuff.
+$(call inherit-product, vendor/zos/common.mk)
+
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 720
+TARGET_SCREEN_WIDTH := 1280
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := cm_jalebi
+PRODUCT_NAME := zos_jalebi
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := jalebi
 

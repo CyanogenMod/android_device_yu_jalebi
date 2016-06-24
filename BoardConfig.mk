@@ -22,9 +22,8 @@ DEVICE_PATH := device/yu/jalebi
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Kernel
-BOARD_KERNEL_TAGS_OFFSET := 0x00000100
-BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_jalebi_defconfig
+TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 
 # Bootchart
 ifeq ($(strip $(INIT_BOOTCHART)),true)
