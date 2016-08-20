@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc
+    
+# Browser
+PRODUCT_PACKAGES += \
+    Gello    
 
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
